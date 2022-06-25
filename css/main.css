@@ -10,7 +10,20 @@ body {
     background-color: var(--primary-white-color);
     color: var(--primary-text-color);
 }
+/* filters nav */
 
+.filters-nav .link {
+    color: var(--accent-color);
+}
+
+.filters-nav .link:hover,
+.filters-nav .link:focus {
+    color: var(--title-text-color);
+}
+
+.filters-nav .link.current {
+    color: var(--title-text-color);
+}
 .button {
     color: var(--title-text-color);
     background-color: var(--primary-white-color);
