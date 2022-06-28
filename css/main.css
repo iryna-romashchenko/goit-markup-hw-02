@@ -1,41 +1,191 @@
+/* main color #212121 */
+/* secondary color #757575 */
+/* accent color #2196F3 */
+/* main white color #FFFFFF */
+/* secondary white color rgba(255, 255, 255, 0.6) */
 
 :root {
-    --primary-text-color: rgba(0, 0, 0, 0.8);
-    --title-text-color: #000000;
-    --accent-color: #18a0fb;
-    --primary-white-color: #ffffff;
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --primary-white-color: #FFFFFF;
+    --button-color: #F5F4FA;
+    --secondary-white-color:rgba(255, 255, 255, 0.6);
+    --footer-color: #2F303A;
 }
 
 body {
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     background-color: var(--primary-white-color);
     color: var(--primary-text-color);
 }
-/* filters nav */
+.logo{
+        color: var(--accent-color);
+        font-family: Raleway, sans-serif;
+        font-size: 26px;
+        line-height: 1.19; 
+        text-decoration: none;   
+        /* color: #2196F3; */
+}
+.logo:hover {
+    color: var(--accent-color)
+}
+/* header contacts */
+.contact-link {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    text-decoration: none;
+}
 
+.contacts a:hover,
+.contacts a:focus {
+    color: var(--accent-color);
+}
+/* any list */
+ul {
+list-style: none;
+}
+
+/* site nav */
+.site-nav .link {
+        font-size: 14px;
+        line-height: 1.14;
+        color: var(--primary-text-color);
+        text-decoration: none;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+
+.site-nav .link.current {
+    color: var(--title-text-color);
+}
+
+.site-nav .link{
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+}
 .filters-nav .link {
     color: var(--accent-color);
 }
 
 .filters-nav .link:hover,
 .filters-nav .link:focus {
-    color: var(--title-text-color);
+    color: var(--accent-color);
 }
 
 .filters-nav .link.current {
     color: var(--title-text-color);
 }
+/* order and filters buttons */
+.order .order-button{
+        color: var(--title-text-color);
+        background-color: var(--button-color);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.9;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+}
+
 .button {
     color: var(--title-text-color);
-    background-color: var(--primary-white-color);
+    background-color: var(--button-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 .button.primary {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
 }
+.button:hover,
+.button:focus {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
 
 .button.secondary {
+        color: var(--accent-color);
+        background-color: var(--primary-white-color);
+
+}
+/* direction and team */
+.section-title{
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+}
+/* our team */
+.name{
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.position{
+    /* font-weight: 400; */
+    font-size: 16px;
+    line-height: 1.19;
+}
+/* our works */
+.sample{
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+}
+/* our works filter */
+.filter-type{
+    /* font-weight: 400; */
+    font-size: 16px;
+    line-height: 1.9;
+}
+/* our features */
+.feature-title{
+color: var(--title-text-color);
+font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+}
+.feature-text{
+    /* font-weight: 400; */
+    font-size: 14px;
+    line-height: 1.7;
+}
+/* footer */
+.footer{
+    background-color: var(--footer-color);
+}
+.footer-contact-address {
+    color: var(--primary-white-color);
+    /* font-weight: 400; */
+    font-size: 14px;
+    line-height: 1.7;
+    text-decoration: none;
+    font-style: normal;
+}
+.footer-contact-tel, .footer-contact-email {
+    color: var(--secondary-white-color);
+    /* font-weight: 400; */
+    font-size: 14px;
+    line-height: 1.7;
+    text-decoration: none;
+    font-style: normal;
+}
+.footer-contacts a:hover,
+.footer-contacts a:focus {
     color: var(--accent-color);
-    background-color: var(--primary-white-color);
 }
