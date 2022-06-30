@@ -67,16 +67,16 @@ list-style: none;
     color: var(--accent-color);
 }
 
-/* .site-nav .link.current {
+.site-nav .link.current {
     color: var(--title-text-color);
-} */
+}
 
-/* .site-nav .link{
+.site-nav .link{
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-} */
+}
 .filters-nav .link {
     color: var(--accent-color);
 }
@@ -89,7 +89,7 @@ list-style: none;
 .filters-nav .link.current {
     color: var(--title-text-color);
 }
-.order{
+h1{
         font-weight: 900;
         font-size: 44px;
         line-height: 1.36;
@@ -98,6 +98,8 @@ list-style: none;
         text-transform: uppercase;
         background-color: var(--footer-color);
         color: var(--primary-white-color);
+        width: 696px;
+              
 }
 /* order and filters buttons */
 .order .order-button{
