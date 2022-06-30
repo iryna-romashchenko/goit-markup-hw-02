@@ -12,6 +12,7 @@
     --button-color: #F5F4FA;
     --secondary-white-color:rgba(255, 255, 255, 0.6);
     --footer-color: #2F303A;
+    --logo-text-color: #000000;
 }
 
 body {
@@ -27,9 +28,14 @@ body {
         text-decoration: none;   
         /* color: #2196F3; */
 }
-.logo:hover {
-    color: var(--accent-color)
+.logo::after {
+    content: "Studio";
+    color: var(--logo-text-color);
 }
+/* .logo:hover {
+    color: var(--accent-color);
+} */
+
 /* header contacts */
 .contact-link {
     color: var(--primary-text-color);
@@ -50,9 +56,10 @@ list-style: none;
 
 /* site nav */
 .site-nav .link {
+        font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
-        color: var(--primary-text-color);
+        color: var(--title-text-color);
         text-decoration: none;
 }
 .site-nav .link:hover,
@@ -60,16 +67,16 @@ list-style: none;
     color: var(--accent-color);
 }
 
-.site-nav .link.current {
+/* .site-nav .link.current {
     color: var(--title-text-color);
-}
+} */
 
-.site-nav .link{
+/* .site-nav .link{
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-}
+} */
 .filters-nav .link {
     color: var(--accent-color);
 }
@@ -82,8 +89,19 @@ list-style: none;
 .filters-nav .link.current {
     color: var(--title-text-color);
 }
+.order{
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        background-color: var(--footer-color);
+        color: var(--primary-white-color);
+}
 /* order and filters buttons */
 .order .order-button{
+        font-family: inherit;
         color: var(--title-text-color);
         background-color: var(--button-color);
         font-weight: 700;
@@ -95,6 +113,7 @@ list-style: none;
 }
 
 .button {
+    font-family: inherit;
     color: var(--title-text-color);
     background-color: var(--button-color);
     font-weight: 500;
@@ -155,10 +174,11 @@ list-style: none;
 }
 /* our features */
 .feature-title{
-color: var(--title-text-color);
-font-weight: 700;
+    color: var(--title-text-color);
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
+    text-transform: uppercase;
 }
 .feature-text{
     /* font-weight: 400; */
@@ -189,3 +209,20 @@ font-weight: 700;
 .footer-contacts a:focus {
     color: var(--accent-color);
 }
+.footer-logo {
+    color: var(--accent-color);
+    font-family: Raleway, sans-serif;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+    
+    /* color: #2196F3; */
+}
+
+.footer-logo::after{
+    content: "Studio";
+    color: var(--primary-white-color) ;
+}
+/* .logo:hover {
+    color: var(--accent-color);
+} */
