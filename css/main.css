@@ -67,10 +67,6 @@ list-style: none;
     color: var(--accent-color);
 }
 
-.site-nav .link.current {
-    color: var(--title-text-color);
-}
-
 .site-nav .link{
     color: var(--primary-text-color);
     font-weight: 500;
@@ -86,10 +82,10 @@ list-style: none;
     color: var(--accent-color);
 }
 
-.filters-nav .link.current {
-    color: var(--title-text-color);
+.link.current {
+    color: var(--accent-color);
 }
-h1{
+.order{
         font-weight: 900;
         font-size: 44px;
         line-height: 1.36;
